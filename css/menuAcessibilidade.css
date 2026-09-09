@@ -37,11 +37,16 @@ width: 90%;
 margin: 10px auto;
 }
 
-.contraste{
+.contraste, .contraste button{
     background-color: black;
     color: white;
 }
 
-.contraste th, .contraste td{
+.contraste th, .contraste td, .contraste button{
     border: 1px solid yellow;
+}
+
+
+.contraste a{
+    color: yellow;
 }
