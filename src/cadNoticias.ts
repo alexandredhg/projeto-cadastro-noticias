@@ -40,9 +40,12 @@ formCadNoticias.addEventListener("submit", (event) => {
         noticia.cadastrar();
 
         divMensagem.style.color = "green";
-        divMensagem.textContent = "";
+        //divMensagem.textContent = "";
         divMensagem.textContent = "Cadastro Realizado com Sucesso";
         formCadNoticias.reset();
+        setTimeout(() => {
+            divMensagem.textContent = "";           
+        }, 3000);
 
     }else{
         let noticiaAlterada = new Noticia(titulo, conteudo, data);
