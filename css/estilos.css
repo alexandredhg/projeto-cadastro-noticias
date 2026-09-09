@@ -1,0 +1,434 @@
+/*Auto Reset*/
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+/*--------------------------------------------------------*/
+
+
+
+/*Titulos*/
+h1{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 3rem;
+    
+}
+
+
+h2{
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    
+    
+}
+
+
+h3{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    
+    
+}
+
+
+
+/*------------------------------------------------------------------*/
+
+
+
+/*Menu Geral*/
+.containerUl{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;    
+    gap: 1rem;
+    row-gap: 1rem;
+    padding: 20px 0;
+
+    width: 100%;
+    min-height: 10rem;
+    background-color: lightgray;
+    margin-bottom: 2rem;
+}
+
+
+.itemLi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: auto;
+    min-height: 4rem;            
+    
+    background-color: blue;    
+    border: 5px  solid  white;    
+    border-radius: 0.7rem;
+    
+    list-style-type: none;
+    
+
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.itemLi:hover{
+    transform: scale(1.05);
+}
+
+
+.tagAli{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;    
+
+    text-decoration: none;
+}
+
+
+/*Menu Especifico*/
+.itemLiHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: auto;
+    min-height: 4rem;           
+    
+    background-color: red;    
+    border: 5px  solid  white;    
+    border-radius: 0.7rem;
+    
+    list-style-type: none;    
+
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.itemLiHome:hover{
+    transform: scale(1.1);
+}
+
+
+.tagAliHome{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 20px  20px;
+    text-align: center;     
+
+    text-decoration: none;
+}
+
+
+
+.itemLiLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: auto;
+    min-height: 4rem;            
+    
+    background-color: green;    
+    border: 5px  solid  white;    
+    border-radius: 0.7rem;
+    
+    list-style-type: none;
+    
+    
+
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.itemLiLogin:hover{
+    transform: scale(1.1);
+}
+
+
+.tagAliLogin{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: white;
+    padding: 20px 20px;    
+
+    text-decoration: none;
+}
+
+
+
+/*---------------------------------------------------------------*/
+
+
+
+/*Botões*/
+/*Container Entrar / Reset*/
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom:2rem;
+    /*overflow: hidden;  
+    Impede que o crescimento do botão crie barras de rolagem que fazem a tela tremer */        
+    
+}
+
+
+.btnEntrar{  
+    background-color: blue;
+    color: white;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    height: auto;
+    width: 15rem;
+    padding: 12px 12px;
+    /*border: none;*/
+    border: 0px solid blue;
+    cursor: pointer; 
+    border-radius: 1rem;
+       
+    
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+
+}
+
+
+.btnEntrar:hover{
+    transform: scale(1.05);
+}
+
+
+
+.btnLimpar{  
+    background-color: coral;
+    color: white;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    height: auto;
+    width: 15rem;
+    padding: 12px 12px;
+    /*border: none;*/
+    border: 0px solid coral;
+    cursor: pointer; 
+    border-radius: 1rem;
+    
+    
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+.btnLimpar:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+.btnMostrar{
+        
+    background-color: gray;
+    color: white;
+    font-size: 0.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+    width: 4rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    padding: 10px 10px;
+    text-align: center;
+    
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+        
+}
+
+
+.btnMostrar:hover{
+    transform: scale(1.2);
+}
+
+
+
+
+/*Botão Voltar*/
+.containerVoltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     /* Impede que o crescimento do botão crie barras de rolagem que fazem a tela tremer */
+    
+    width: 100%;
+    height: auto;    
+    padding: 10px;/* Dá uma folga para o botão crescer sem cortar as bordas */
+    margin-bottom: 3rem;
+}
+
+.voltar {
+    display: block;
+    width: 100%;    
+    max-width: 40rem;
+    min-height: 4rem;
+    padding: 20px 0;
+    
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    
+    background-color: black;
+    color: white;
+    text-align: center;    
+    border: 0px  solid  white;    
+    border-radius: 0.7rem;
+    
+    text-decoration: none;   
+
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out;  
+} 
+}
+
+.voltar:hover {
+    transform: scale(1.3);
+}
+
+
+
+
+/*Botão Sair "Logout"r*/
+/* Container do Botão Sair "Logout" */
+.containerSairLogout {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 100%;
+    height: auto;
+        
+    margin-bottom: 2rem;    
+    box-sizing: border-box;
+
+    border: 0px  solid  black;
+}
+
+
+/* Botão Sair "Logout" */
+.sairLogout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+    max-width: 40rem;    
+    min-height: 4rem;
+    padding: 20px 0;    
+
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+    box-sizing: border-box;
+    background-color: black;
+    color: white;    
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;    
+
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out;    
+}
+
+
+.sairLogout:hover{
+    transform: scale(1.05);
+}
+
+
+
+/*----------------------------------------------------------------------*/
+
+
+
+.msg{
+    display: block;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+
+/*--------------------------------------------------------------*/
+
+
+
+/*Rodapé*/
+.containerRodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: lightgray;
+    font-size: 1.2rem;
+    
+}
+
+
+.rodape{    
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;    
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+.tagArodape{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: blueviolet;
+    
+}
+
+

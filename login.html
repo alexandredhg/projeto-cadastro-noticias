@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de login</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+
+    <body>
+        
+        <div id="divMenuAcessibilidade"></div>
+
+        <h1>Formulário de Login</h1>
+
+        <div id="divMensagem" role="alert" aria-live="assertive" class="msg"></div>
+
+        <form id="formLogin">
+
+            <div class="containerForm">
+                <div>
+                    <label for="txtEmail">* E-mail:</label>
+
+                    <input type="email" id="txtEmail" />
+                </div>
+
+                <div>
+                    <label for="txtSenha">* Senha:</label>
+                    <input type="password" id="txtSenha" />
+                    <button class="btnMostrar" type="button" id="toggleSenha">Mostrar</button>
+                </div>
+            </div>
+
+            <div class="btnContainer">
+                <button type="submit" class="btnEntrar">Entrar</button>
+
+                <button type="reset" class="btnLimpar">Limpar</button>
+
+            </div>
+
+        </form>
+
+
+        <!--<hr/>-->
+
+
+
+        </main>
+
+        <div id="rodape"></div>
+
+
+        <!--Script-->
+        <!--defer: Carrega o script em segundo plano e so Execulta apos Carregamento toral da Página -->
+        <script defer type="module" src="dist/menuAcessibilidade.js"></script>
+
+        <script type="module" src="dist/login.js"></script>
+
+        <script type="module" src="dist/rodape.js"></script>              
+
+    </body>
+
+</html>

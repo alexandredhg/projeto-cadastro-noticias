@@ -1,0 +1,89 @@
+/*Titulos*/
+h1{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+h2{
+    font-size: 2.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+
+h3{
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+/*Tabelas*/
+.containerTable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+
+table{
+    width: 70%;    
+    border: 2px  solid  black;
+    margin-bottom: 3rem;
+}
+
+
+th{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 10px;
+     border: 2px  solid  black;
+     text-align: center;
+}
+
+
+td{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 10px;
+     border: 2px  solid  black;
+     text-align: center;
+}
+
+
+th.titulo{
+    min-width: 15rem;
+    background-color: blue;
+    color: white;
+}
+
+
+th.conteudo{    
+    background-color: blue;
+    color: white;
+}
+
+
+th.data{
+    min-width: 8rem;
+    background-color: blue;
+    color: white;
+}
+
+
+
+

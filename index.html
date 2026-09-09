@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de Noticia</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/estilos.css">
+        
+    </head>
+
+    <body>
+        
+        <div id="divMenuAcessibilidade"></div>
+
+        <h1>Página de Notícias</h1>
+
+        <div>
+            <h2>Menu</h2>
+        </div>
+
+        <div>
+            <ul class="containerUl">
+                <li class="itemLiLogin">
+                    <a class="tagAliLogin" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <h3 id="conteudoPrincipal">Notícias</h3>
+        </div>
+
+        <div class="containerTable">
+            <table id="tabelaNoticias"></table>
+        </div>
+
+        <div id="rodape"></div>
+
+        <!--Script-->
+        <!--defer: Carrega o script em segundo plano e so Execulta apos Carregamento toral da Página -->
+        <script defer type="module" src="dist/menuAcessibilidade.js" ></script>
+
+        <script type="module" src="dist/listaNoticias.js"></script>
+
+        <script type="module" src="dist/rodape.js"></script>
+        
+    </body>
+
+</html>

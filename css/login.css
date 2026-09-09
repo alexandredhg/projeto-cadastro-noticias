@@ -1,0 +1,49 @@
+/*Auto Reset*/
+
+
+/*Titulos*/
+h1{
+    font-size: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+
+/*Formulario*/
+.containerForm{
+    margin-bottom: 2.5rem;
+}
+
+
+label{
+    font-size: 1.5rem;
+    margin-left: 7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+input{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 20rem;
+    height: 2rem;
+    padding: 10px 10px;
+    text-align: center;
+    border: 2px  solid  black;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;    
+
+}
+
+
+
+
+
+
+
+
+/*Memsagem*/

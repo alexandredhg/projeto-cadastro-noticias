@@ -1,0 +1,117 @@
+/*Titulos*/
+h1{
+    text-align: center;
+}
+
+
+
+/*Tabelas*/
+.containerTable{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+table{
+    width: 70%;    
+    border: 2px  solid  black;
+    margin-bottom: 3rem;
+}
+
+
+th{
+    font-size: 1.4rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 10px;
+     border: 2px  solid  black;
+     text-align: center;
+}
+
+
+td{
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 10px;
+     border: 2px  solid  black;
+     text-align: center;
+}
+
+
+
+
+th.titulo{
+    min-width: 15rem;
+    background-color: blue;
+    color: white;
+}
+
+
+th.conteudo{
+    background-color: blue;
+    color: white;
+
+}
+
+
+th.data{
+    min-width: 8rem;
+    background-color: blue;
+    color: white;
+}
+
+
+th.acoes{
+    background-color: blue;
+    color: white;
+}
+
+
+/*Botão Excluir*/
+.excluir{
+    background-color: red;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 12px 20px;
+
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+.excluir:hover{
+    transform: scale(1.1);
+}
+
+
+
+/*Botão Alterar*/
+.alterar{
+    background-color: green;
+    color: white;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    padding: 12px 20px;
+
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out; 
+}
+
+
+.alterar:hover{
+    transform: scale(1.1);
+}
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página do Administrador</title>
+    <link rel="stylesheet" href="css/adm.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+</head>
+
+    <body>        
+
+        <div id="divMenuAcessibilidade"></div>
+
+        <h1>Página do Administrador</h1>
+
+        <h2>Menu</h2>
+
+        <div>
+            <ul id="conteudoPrincipal" class="containerUl">
+                <li class="itemLiHome">
+                    <a class="tagAliHome" href="index.html">&#127968;Home</a>
+                </li>
+
+                <li class="itemLi">
+                    <a class="tagAli" href="cadNoticias.html">Cadasto de Notícias</a>
+                </li>
+
+                <li class="itemLi">
+                    <a class="tagAli" href="listaNoticiasAdm.html">Listagem de Notícias</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="divMensagem" role="alert" aria-live="assertive" class="msg"></div>
+
+        <div class="containerSairLogout">            
+            <button class="sairLogout" type="button" id="logoutBtn">
+              Encerrar Sessão
+            </button>
+        </div>
+
+        <div id="rodape"></div>
+
+
+        <!--Script-->
+        <!--defer: Carrega o script em segundo plano e so Execulta apos Carregamento toral da Página -->
+        <script type="module" src="dist/controleAcesso.js"></script>
+
+        <script defer type="module" src="dist/menuAcessibilidade.js" ></script>
+
+        <script type="module" src="dist/logout.js"></script>
+
+        <script type="module" src="dist/rodape.js"></script>
+
+    </body>
+
+</html>

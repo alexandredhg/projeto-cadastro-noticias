@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title id="tituloPagina">Cadastro de Noticias</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="stylesheet" href="css/cadNoticias.css">    
+    </head>
+
+    <body>
+
+        <div id="divMenuAcessibilidade"></div>
+        
+        <h1 id="tituloCabecalho">Formulário de Cadastro de Notícias</h1>
+
+        <div>
+            <form id="formCadNoticias">
+
+                <div class="containerForm">
+                    <div>
+                        <label for="txttitulo">*Titulo</label>
+                        
+                        <input type="textTitulo" id="txtTitulo" required />
+                    </div>
+
+                    <div>
+                        <label class="labelArea" for="txtConteudo">*Conteúdo</label>
+                        <br>                    
+                        <textarea id="txtConteudo" cols="40"  rows="5"></textarea>
+                    </div>
+
+                    <div>
+                        <label for="txtData">*Informe a Data</label>                
+                        <input type="date" id="txtData" required />
+                    </div>
+
+                </div>
+
+                <div class="msg" id="divMensagem" role="alert"></div>
+
+                <div class="btnContainer">
+                    
+                    <button class="btnSalvar" type="submit" id="btnEnviar">Cadastrar</button>               
+                    
+                    <button class="btnLimpar" type="reset">Limpar</button>
+                    
+                </div>            
+            </form>
+        </div>
+
+        <div class="containerVoltar">
+            <a class="voltar" href="adm.html">← Voltar</a>
+        </div>
+
+
+        <div id="rodape"></div>
+
+
+        <!--Script-->
+        <!--defer: Carrega o script em segundo plano e so Execulta apos Carregamento toral da Página -->
+        <script defer type="module" src="dist/menuAcessibilidade.js" ></script>
+
+        <script type="module" src="dist/cadNoticias.js"></script>
+
+        <script type="module" src="dist/rodape.js"></script>
+
+    </body>
+
+</html>

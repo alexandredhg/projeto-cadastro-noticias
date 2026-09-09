@@ -1,0 +1,181 @@
+/*Titulos*/
+h1{
+    
+    text-align: center;
+    
+}
+
+
+
+/*Formulario*/
+.containerForm{
+    margin-left: 7rem;
+    margin-bottom: 2.5rem;
+}
+
+
+label{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+
+input{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 20rem;
+    height: auto;
+    padding: 10px 10px;    
+    border: 2px  solid  black;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;
+
+}
+
+
+
+.labelArea{
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 1.5rem;
+}
+
+
+textArea{
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px 10px;    
+    border: 2px  solid  black;
+    border-radius: 0.5rem;
+    margin-bottom: 1.5rem;  
+
+
+}
+
+
+
+
+
+/*Botões*/
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    overflow: hidden;  
+    /*Impede que o crescimento do botão crie barras de rolagem que fazem a tela tremer */        
+    
+}
+
+
+
+.btnSalvar{  
+    background-color: blue;
+    color: white;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    height: auto;
+    width: 15rem;
+    padding: 12px 12px;
+    
+    /*border: none;*/
+    border: 0px solid blue;
+    cursor: pointer; 
+    border-radius: 1rem;
+
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out;
+
+    }
+
+
+.btnSalvar:hover{
+    transform: scale(1.05);
+}
+
+
+
+.btnLimpar{  
+    background-color: coral;
+    color: white;
+    font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    height: auto;
+    width: 15rem;
+    padding: 12px 12px;
+    /*border: none;*/
+    border: 0px solid coral;
+    cursor: pointer; 
+    border-radius: 1rem;
+    
+    
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.btnLimpar:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+.btnMostrar{
+        
+    background-color: gray;
+    color: white;
+    font-size: 0.7rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: auto;
+    width: 4rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-left: 1rem;
+    padding: 10px 10px;
+    text-align: center;
+
+    /* Adicionado 'will-change' para suavizar a renderização da animação no navegador */
+    will-change: transform;
+    transition: transform 0.3s ease-in-out;       
+        
+}
+
+
+.btnMostrar:hover{
+    transform: scale(1.2);
+}
+
+
+
+/*Memsagem*/
+.msg{
+    display: block;
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
