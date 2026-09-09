@@ -12,6 +12,11 @@
 }
 
 #btnAcessibilidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
     position: fixed;
     top: 20px;
     right: 20px;
@@ -37,16 +42,22 @@ width: 90%;
 margin: 10px auto;
 }
 
-.contraste, .contraste button{
+.contraste{
     background-color: black;
     color: white;
 }
 
-.contraste th, .contraste td, .contraste button{
+.contraste th, .contraste td{
     border: 1px solid yellow;
 }
 
 
 .contraste a{
     color: yellow;
+}
+
+
+.contraste button{
+    background-color: white;
+    color: black;
 }
