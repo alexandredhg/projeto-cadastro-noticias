@@ -1,8 +1,10 @@
 .skipLink {
     left: -9999px;
+    top: 20px;
     position: absolute;
     text-decoration: none;
-    background-color: black;
+    background-color: blue;
+    border: none;
     color: white;
     padding: 10px;
 }
@@ -15,7 +17,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 15px;
+
+    background-color: blue;
+    color: white;
+    border: none;
 
     position: fixed;
     top: 20px;
@@ -30,7 +36,7 @@
     top: 50px;
     right: 20px;
     background-color: white;
-border: 1px solid gray;
+border: 2px solid blue;
 width: 150px;
 box-sizing: border-box;
 }
@@ -40,6 +46,8 @@ box-sizing: border-box;
 display: block;    
 width: 90%;
 margin: 10px auto;
+background-color: gray;
+color: white;
 }
 
 .contraste{
@@ -53,11 +61,12 @@ margin: 10px auto;
 
 
 .contraste a{
-    color: yellow;
+    color: darkblue;
 }
 
 
-.contraste button{
-    background-color: white;
+.contraste button, .contraste li{
+    background-color: coral;
+    color: darkblue;
     color: black;
 }
