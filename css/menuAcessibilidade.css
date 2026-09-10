@@ -1,19 +1,26 @@
 .skipLink {
     left: -9999px;
-    top: 20px;
+    top: 20px; /* Define a distância do topo aqui */
     position: absolute;
     text-decoration: none;
     background-color: blue;
     border: none;
     color: white;
     padding: 10px;
+    z-index: 9999; /* Garante que o botão fique visível por cima de outros elementos */
 }
+
 
 .skipLink:focus {
-    position: static;
+    /*position: static;*/
+    left: 20px; /* Traz o botão de volta para a tela mantendo a posição topo */
+    position: absolute; /* Mantém como absolute para respeitar o 'top' */
+    outline-offset: 3px;
 }
 
-#btnAcessibilidade {
+
+
+#btnAcessibilidade {    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,52 +28,66 @@
 
     background-color: blue;
     color: white;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
     border: none;
 
     position: fixed;
     top: 20px;
     right: 20px;
     cursor: pointer;
-    width: 150px;
+    width: 180px;
+    height: 30px;
     box-sizing: border-box;
 }
 
 #menuAcessibilidade {
     position: fixed;
-    top: 50px;
+    top: 55px;
     right: 20px;
     background-color: white;
-border: 2px solid blue;
-width: 150px;
-box-sizing: border-box;
+    border: 2px solid blue;
+    width: 180px;
+    box-sizing: border-box;
 }
 
 
 #menuAcessibilidade button {
 display: block;    
 width: 90%;
+height: 25px;
 margin: 10px auto;
-background-color: gray;
+background-color: blueviolet;
 color: white;
+font-size: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: bold;
 }
 
-.contraste{
+.contraste, .contraste ul, .contraste footer{
     background-color: black;
     color: white;
 }
 
 .contraste th, .contraste td{
-    border: 1px solid yellow;
+    border: 1px solid gray;
 }
 
 
 .contraste a{
-    color: darkblue;
+    color: white;
 }
 
 
 .contraste button, .contraste li{
     background-color: coral;
-    color: darkblue;
-    color: black;
+    color: white;
+    border: none;    
+}
+
+
+.contraste input{
+    background-color: brown;
+    color: white;
 }
