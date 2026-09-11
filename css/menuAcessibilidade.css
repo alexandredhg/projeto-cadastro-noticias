@@ -1,6 +1,7 @@
 .skipLink {
-    left: -9999px;
-    top: 20px; /* Define a distância do topo aqui */
+    top: -9999px;
+    margin-top: 15px;
+    margin-left: 40px; /* Define a distância do topo aqui */
     position: absolute;
     text-decoration: none;
     background-color: blue;
@@ -13,14 +14,16 @@
 
 .skipLink:focus {
     /*position: static;*/
-    left: 20px; /* Traz o botão de volta para a tela mantendo a posição topo */
-    position: absolute; /* Mantém como absolute para respeitar o 'top' */
+    top: 0px;
+    left: 0px; /* Traz o botão de volta para a tela mantendo a posição topo */
+     /* Mantém como absolute para respeitar o 'top' */
     outline-offset: 3px;
+    outline: 3px solid #ffcc00;
 }
 
 
 
-#btnAcessibilidade {    
+.btnAcessibilidade {    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,33 +37,38 @@
     border: none;
 
     position: fixed;
-    top: 20px;
-    right: 20px;
+    z-index: 9999;
+    top: 10px;
+    right: 35px;
     cursor: pointer;
     width: 180px;
     height: 30px;
     box-sizing: border-box;
+    
 }
 
-#menuAcessibilidade {
+
+.menuAcessibilidade {
     position: fixed;
-    top: 55px;
-    right: 20px;
-    background-color: white;
-    border: 2px solid blue;
+    top: 45px;
+    right: 35px;
+    
+    border: 3px solid blue;    
     width: 180px;
     box-sizing: border-box;
 }
 
 
-#menuAcessibilidade button {
+.menuAcessibilidadeButton {
 display: block;    
-width: 90%;
+width: 85%;
 height: 25px;
 margin: 10px auto;
-background-color: blueviolet;
-color: white;
-font-size: 10px;
+
+color: green;
+border:  3px solid green;
+border-radius: 5px;
+font-size: 12px;
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-weight: bold;
 }
@@ -163,5 +171,26 @@ font-weight: bold;
 
     width: 100%;
     max-width: 8rem;
+}
+
+
+
+
+/*Menu Acessibilidade*/
+.contraste .btnAcessibilidade{
+    background-color: blue;
+}
+
+.contraste .menuAcessibilidade{
+    background-color: black;
+    border: 3px solid gray;
+}
+
+
+.contraste .menuAcessibilidadeButton{
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    border-radius: 10px;
 }
 
