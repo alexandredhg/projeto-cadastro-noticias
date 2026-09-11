@@ -65,14 +65,19 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 font-weight: bold;
 }
 
-.contraste, .contraste ul, .contraste footer{
-    background-color: black;
+
+/*Contraste*/
+.contraste, .contraste ul{
+    background-color: #414246;
     color: white;
 }
 
 .contraste th, .contraste td{
-    border: 1px solid gray;
+    border: 3px solid gray;
+    color: white;
+    font-weight: bold;
 }
+
 
 
 .contraste a{
@@ -80,14 +85,83 @@ font-weight: bold;
 }
 
 
-.contraste button, .contraste li{
-    background-color: coral;
+.contraste input, .contraste textarea{
+    background-color: #893041;
+    color: white;
+    border: 3px solid white;
+}
+
+
+/* Correção para o autopreenchimento */
+.contraste input:-webkit-autofill,
+.contraste input:-webkit-autofill:hover, 
+.contraste input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #893041 inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+.contraste input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    cursor: pointer;
+}
+
+
+
+
+.contraste .divMensagem{
+    color: white;
+}
+
+
+.contraste footer{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+
+
+
+/*Botões Menu*/
+.contraste .itemLiHome{
+    background-color: #893041;
+    color: white;
+    border: none;
+}
+
+
+.contraste .sairLogout, .contraste .voltar{
+    background-color: gray;
     color: white;
     border: none;    
 }
 
 
-.contraste input{
-    background-color: brown;
+.contraste .itemLi{
+    background-color: #3b5d76;
     color: white;
+    border: none;
 }
+
+
+.contraste .itemLiLogin{
+    background-color: #e5a93b;
+    color: white;
+    border: none;
+}
+
+
+
+/*Botões*/
+.contraste .btnMostrar{
+    background-color: black;
+    color: white;
+    border: 3px solid white;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    width: 100%;
+    max-width: 8rem;
+}
+
